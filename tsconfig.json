@@ -1,7 +1,11 @@
 {
+<<<<<<< HEAD
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   }
+=======
+  "extends": "astro/tsconfigs/strict"
+>>>>>>> 4a8bb4a (first commit)
 }
