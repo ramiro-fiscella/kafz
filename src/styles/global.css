@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html {
+  color: darkslategray;
+  background-color: #f4edea;
+
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  margin: 80px auto;
+  max-width: 80ch;
+  width: 100%;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+  font-size: 20px;
+}
+
+/* typography styles */
+a {
+  color: cadetblue;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #f4edea;
+  cursor: pointer;
+}
+a:visited {
+  color: cadetblue;
+}
+h1 {
+  margin: 1rem 0;
+  line-height: 1.2;
+  font-size: 2.4rem;
+}
+
+/* nav styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 10;
+  padding: 1rem;
+  background-color: #f4edea;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80ch;
+  margin: auto;
+}
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 28px;
+  height: 5px;
+  margin-bottom: 4px;
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: cadetblue;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: 2px solid cadetblue;
+  outline-offset: -1px;
+  width: 100%;
+}
+
+.nav-links a:hover,
+a:focus {
+  color: #f4edea;
+  background-color: cadetblue;
+}
+
+.expanded {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  text-align: right;
+  margin: 0;
+  background-color: #f4edea;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    outline: none;
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

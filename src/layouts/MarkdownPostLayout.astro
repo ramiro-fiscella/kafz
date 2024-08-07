@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <h1>{frontmatter.title}</h1>
+  <p>
+    {frontmatter.pubDate.toString().slice(0, 10)} | Written by {
+      frontmatter.author
+    }
+  </p>
+  <p><em>{frontmatter.description}</em></p>
+  <slot />
+
+  <a href="..">Back</a>
+</BaseLayout>
+
+<style>
+  a {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background-color: cadetblue;
+    color: #f4edea;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+</style>

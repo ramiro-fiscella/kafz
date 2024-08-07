@@ -1,0 +1,51 @@
+---
+import Navigation from './Navigation.astro';
+import Hamburger from './Hamburger.astro';
+---
+
+<header>
+  <div class="header-container">
+    <a href="/" title="the whale blog"
+      ><img
+        src="data:image/png;base64,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"
+      />
+      <span> the whale blog </span>
+    </a>
+    <nav>
+      <Hamburger />
+      <Navigation />
+    </nav>
+  </div>
+</header>
+
+<script>
+  import '../scripts/menu.ts';
+</script>
+
+<style>
+  a {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  a:visited {
+    color: cadetblue;
+  }
+  a:hover,
+  a:focus {
+    color: teal;
+    transition-duration: 2s;
+  }
+  a:not(:focus) {
+    transition-duration: 2s;
+  }
+
+  @media screen and (max-width: 600px) {
+    span {
+      opacity: 0;
+    }
+  }
+</style>
