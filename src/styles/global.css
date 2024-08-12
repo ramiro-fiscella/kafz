@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 html {
-  color: darkslategray;
-  background-color: #f4edea;
-
-  font-family: 'Nunito', sans-serif;
+  color: #333;
+  background-color: #ddd;
+  font-family: 'Noto Serif', serif;
 }
 
 body {
@@ -19,6 +17,7 @@ body {
   box-sizing: border-box;
 }
 
+/* typography styles */
 h1,
 h2,
 h3,
@@ -26,29 +25,34 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+
+  margin: 2rem 0 1rem 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0;
+  color: #888;
 }
 p {
   text-wrap: pretty;
   font-size: 20px;
+  margin-bottom: 2rem;
 }
 
-/* typography styles */
 a {
-  color: cadetblue;
+  color: #222;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
-a:hover,
-a:focus {
-  color: #f4edea;
-  cursor: pointer;
-}
-a:visited {
-  color: cadetblue;
-}
-h1 {
-  margin: 1rem 0;
-  line-height: 1.2;
-  font-size: 2.4rem;
+em {
+  color: #666;
 }
 
 /* nav styles */
@@ -60,7 +64,7 @@ header {
   width: 100vw;
   z-index: 10;
   padding: 1rem;
-  background-color: #f4edea;
+  background-color: #ddd;
 }
 .header-container {
   display: flex;
@@ -78,15 +82,14 @@ header {
   width: 28px;
   height: 5px;
   margin-bottom: 4px;
-  background-color: cadetblue;
-  border-radius: 5px;
+  background-color: #222;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: cadetblue;
+  background-color: #222;
   display: none;
   margin: 0;
 }
@@ -98,28 +101,29 @@ header {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  outline: 2px solid cadetblue;
+  outline: 2px solid #222;
   outline-offset: -1px;
   width: 100%;
+  color: #222;
 }
 
 .nav-links a:hover,
 a:focus {
-  color: #f4edea;
-  background-color: cadetblue;
+  color: #ddd;
+  background-color: #222;
 }
 
 .expanded {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.4rem 1rem;
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   left: 0;
   text-align: right;
   margin: 0;
-  background-color: #f4edea;
+  background-color: #ddd;
 }
 
 @media screen and (min-width: 636px) {
