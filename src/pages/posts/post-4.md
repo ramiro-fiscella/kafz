@@ -1,15 +1,12 @@
 ---
 layout: '../../layouts/MarkdownPostLayout.astro'
-title: 'Masters of Their Craft: Lessons from the Olympics'
+title: 'Masters of Their Craft'
+subtitle: 'Lessons from the Olympics'
 pubDate: 2024-07-26
 description: 'Finding inspiration in the discipline and dedication of Olympic athletes.'
 author: 'Ka'
 tags: ['discipline', 'dedication', 'Olympics', 'self-mastery']
 ---
-
-# Masters of Their Craft: Lessons from the Olympics
-
-## _Inspiration in Discipline and Dedication_
 
 Watching the Olympics, I am reminded of the incredible discipline and dedication required to become a master of one's craft. Athletes spend years, sometimes decades, honing their skills, often facing setbacks and challenges along the way. Yet, they persist, driven by an unwavering commitment to their goals.
 

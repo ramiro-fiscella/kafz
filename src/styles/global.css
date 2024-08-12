@@ -47,7 +47,7 @@ p {
 }
 
 a {
-  color: #222;
+  color: #333;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
@@ -82,14 +82,14 @@ header {
   width: 28px;
   height: 5px;
   margin-bottom: 4px;
-  background-color: #222;
+  background-color: #333;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #222;
+  background-color: #333;
   display: none;
   margin: 0;
 }
@@ -101,16 +101,17 @@ header {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  outline: 2px solid #222;
+  outline: 2px solid #333;
   outline-offset: -1px;
   width: 100%;
-  color: #222;
+  color: #333;
 }
 
 .nav-links a:hover,
 a:focus {
   color: #ddd;
-  background-color: #222;
+  background-color: #333;
+  border-radius: 3px;
 }
 
 .expanded {

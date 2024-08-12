@@ -2,14 +2,24 @@
 
 ---
 
-<a href="..">Back</a>
+<div class="back">
+  <a href="/blog">Back</a>
+</div>
 
 <style>
-  a {
+  .back {
     position: fixed;
     bottom: 2rem;
-    right: 1rem;
-    background-color: #222;
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+  }
+  a {
+    position: relative;
+    margin-right: 2rem;
+    background-color: #333;
     color: #ddd;
     padding: 0.5rem 1rem;
     border-radius: 3px;

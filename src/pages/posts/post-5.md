@@ -1,15 +1,12 @@
 ---
 layout: '../../layouts/MarkdownPostLayout.astro'
-title: 'The Struggle and the Shine: Perseverance in the Face of Failure'
+title: 'The Struggle and the Shine'
+subtitle: 'Perseverance in the Face of Failure'
 pubDate: 2024-07-28
 description: 'The journey of becoming and the rewards that come after the storm.'
 author: 'Ka'
 tags: ['perseverance', 'failure', 'self-mastery', 'developer']
 ---
-
-# The Struggle and the Shine: Perseverance in the Face of Failure
-
-## _The Journey of Becoming_
 
 The journey to becoming who we want to be is often fraught with challenges. As a developer, I’ve faced my share of failures—moments when the code just wouldn’t work, or when a project didn’t meet expectations. These setbacks can be disheartening, making it tempting to give up. But each failure is a lesson, a stepping stone on the path to success.
 

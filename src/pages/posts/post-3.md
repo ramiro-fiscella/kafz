@@ -1,15 +1,12 @@
 ---
 layout: '../../layouts/MarkdownPostLayout.astro'
 title: 'The Resonance of Indie Music'
+subtitle: 'Finding harmony and authenticity in the indie music scene'
 pubDate: 2024-07-25
-description: 'Finding harmony and authenticity in the indie music scene.'
+description: ''
 author: 'Ka'
 tags: ['soul searching', 'self-discovery', 'music', 'authenticity']
 ---
-
-# The Resonance of Indie Music
-
-## _Finding Harmony in Authentic Sounds_
 
 Indie music is more than just a genre; it's a movement, a declaration of independence from mainstream expectations. The resonance of indie music lies in its raw authenticity, where artists pour their hearts into every note, creating a sound that speaks directly to the soul. These melodies are often imperfect, sometimes unconventional, but they **echo the truth of the human experience**.
 
