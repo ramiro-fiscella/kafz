@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 
 const pageTitle: string = 'About';
 
@@ -68,4 +68,6 @@ const goal: number = 3;
       <p>My goal is not 3 days.</p>
     )
   }
+
+  <Footer />
 </BaseLayout>

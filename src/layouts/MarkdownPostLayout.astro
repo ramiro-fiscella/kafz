@@ -7,13 +7,49 @@ const { frontmatter } = Astro.props;
 <BaseLayout>
   <h1>{frontmatter.title}</h1>
   <h2>{frontmatter.subtitle}</h2>
+
   <p>
     {frontmatter.pubDate.toString().slice(0, 10)} | Written by {
       frontmatter.author
     }
   </p>
   <p><em>{frontmatter.description}</em></p>
+
+  <div class="tags">
+    {
+      frontmatter.tags.map((tag: any) => (
+        <p class="tag">
+          <a href={`/tags/{tag}`}>{tag}</a>
+        </p>
+      ))
+    }
+  </div>
+
   <slot />
 </BaseLayout>
 
 <BackBtn />
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+  }
+
+  .tag {
+    border: solid 1px #333;
+    border-radius: 3px;
+    padding: 4px 16px;
+    font-size: 16px;
+  }
+  .tag:hover {
+    background-color: #333;
+    color: #ebddde;
+    cursor: pointer;
+  }
+
+  .tag:hover a {
+    color: #ebddde;
+  }
+</style>

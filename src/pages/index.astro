@@ -1,22 +1,73 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
+import BgGrid from '../components/BgGrid.astro';
 const pageTitle: string = 'Home Page';
 ---
 
 <BaseLayout pageName={pageTitle}>
+  <!-- 
+    <p class="decor">⌨</p>
+    -->
+  <div class="home"></div>
+  <p class="decor">✲</p>
   <h1><span>Un</span>Name</h1>
   <h2>Un subtitulo para la página</h2>
 
   <p>
-    Un Name es un espacio abierto para que cualquiera pueda escribir sobre lo
-    que quiera. No hace falta ser periodista ni tener experiencia. Este es tu
-    lugar para contar historias, compartir ideas o simplemente expresarte. No
-    hay filtros ni vueltas, solo gente real diciendo lo que piensa.
+    <em>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique
+      blanditiis rem id quos eum ut quam omnis officiis nulla?
+    </em>
   </p>
+
+  <!--
+    <Greeting
+    client:load
+    messages={[
+    'Yo sé que a vos te pasó lo mismo.',
+    'Que la inocencia les valga.',
+    'Todo concluye al fin.',
+    'No me arrepiento de este amor.',
+    'No es magia, es trabajo.',
+      '¡Impacto! Un hombre con tres brazos.',
+      '¡Escándalo! Se cayó una estantería.',
+      '¡Billetera mata galán!',
+      'Lo dejo a tu criterio.',
+      'Comiste cabashaaa.',
+      'Y todo a pulmón.',
+      'El éxito es estar bien con uno mismo.',
+      'El que abandona no tiene premio.',
+      '¿Qué es un desubicado? Es alguien que está en un lugar donde no debe estar.',
+      ]}
+      />
+      -->
+  <BgGrid />
 </BaseLayout>
 
 <style>
+  * {
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 1rem 0;
+    font-size: 5rem;
+  }
+  h2 {
+    color: #333;
+  }
+  .decor {
+    font-size: 3rem;
+    margin: 0;
+  }
   span {
     font-weight: 300;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
   }
 </style>
