@@ -1,6 +1,7 @@
 ---
 import Navigation from './Navigation.astro';
 import Hamburger from './Hamburger.astro';
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <header>
@@ -13,6 +14,7 @@ import Hamburger from './Hamburger.astro';
     <nav>
       <Hamburger />
       <Navigation />
+      <ThemeIcon />
     </nav>
   </div>
 </header>
@@ -40,6 +42,11 @@ import Hamburger from './Hamburger.astro';
   .logo {
     font-size: 2rem;
     display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   @media screen and (max-width: 600px) {

@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/MarkdownPostLayout.astro'
-title: 'Post 2'
+title: 'Un título de prueba'
 pubDate: 2024-07-24
 description: 'Exploring how creating a digital image can be a tool for uncovering our true purpose and finding genuine satisfaction.'
-author: 'Ka'
+author: 'Otro'
 tags: ['soul searching', 'self-discovery', 'digital creation', 'art']
 ---
 

@@ -1,24 +1,45 @@
 ---
-const { title, url } = Astro.props;
+const { title, url, date, author, description } = Astro.props;
 ---
 
 <li>
-  <a href={url}>{title}</a>
+  <a href={url}>
+    <div class="card">
+      <h3 class="card-title">{title}</h3>
+      <p class="card-meta">{date} | {author}</p>
+      <p class="card-description">{description}</p>
+    </div>
+  </a>
 </li>
-<style>
-  a:hover {
-    background-color: #333;
-    color: #ebddde;
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-weight: bold;
 
-    transition: all 0.3s;
+<style>
+  .card {
+    border: 1px solid #666;
+    height: 280px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
   }
 
-  ul {
-    list-style: none;
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .card-meta {
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+  }
+
+  .card-description {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    text-wrap: pretty;
   }
 </style>

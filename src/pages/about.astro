@@ -2,72 +2,43 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
 
-const pageTitle: string = 'About';
-
-interface Identity {
-  firstName: string;
-  country: string;
-  occupation: string;
-  hobbies: string[];
-}
-
-const identity: Identity = {
-  firstName: 'Ka',
-  country: 'Argentina',
-  occupation: 'Web Developer',
-  hobbies: ['Reading', 'Playing Guitar', 'Playing Videogames', 'Programming'],
-};
-
-const skills: string[] = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Astro',
-  'Tailwind',
-];
-
-const happy: boolean = true;
-const finished: boolean = false;
-const goal: number = 3;
+const pageTitle: string = 'What?';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Hello World!</h2>
+  <section>
+    <h2>Bienvenido a UnName</h2>
+    <p>
+      <strong>Un Name</strong> es un fanzine digital donde las ideas fluyen libremente.
+      Aquí, cualquiera puede ser autor, sin importar su experiencia o historia.
+    </p>
+  </section>
 
-  <p>Here are a few facts about me:</p>
+  <section>
+    <h3>Propósito</h3>
+    <p>
+      Queremos ofrecer un espacio abierto para que cualquiera pueda compartir
+      pensamientos, relatos, poesías y más. Lo único que pedimos es respeto por
+      la visión y las palabras de los demás.
+    </p>
+  </section>
 
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>
-      I live in {identity.country} and I work as a {identity.occupation}.
-    </li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-        </li>
-      )
-    }
-  </ul>
+  <section>
+    <h3>Filosofía</h3>
+    <p>
+      Celebramos la diversidad, la creatividad y la autenticidad. Nos enfocamos
+      en el contenido, manteniendo un diseño minimalista para que tu mensaje sea
+      lo principal.
+    </p>
+  </section>
 
-  <p>My skills are:</p>
-
-  <ul>
-    {skills.map((skill) => <li>{skill}</li>)}
-  </ul>
-
-  {happy && <p>I am happy to be learning Astro!</p>}
-
-  {finished && <p>I finished this tutorial!</p>}
-
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days.</p>
-    ) : (
-      <p>My goal is not 3 days.</p>
-    )
-  }
+  <section>
+    <h3>Comunidad</h3>
+    <p>
+      Escribe, comparte y disfruta de las diversas perspectivas que hacen único
+      a <em>Un Name</em>. Este espacio es tanto tuyo como nuestro.
+    </p>
+  </section>
 
   <Footer />
 </BaseLayout>

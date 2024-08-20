@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBtns from '../components/HomeBtns.astro';
 import Greeting from '../components/Greeting';
 import BgGrid from '../components/BgGrid.astro';
 const pageTitle: string = 'Home Page';
@@ -9,7 +10,6 @@ const pageTitle: string = 'Home Page';
   <!-- 
     <p class="decor">⌨</p>
     -->
-  <div class="home"></div>
   <p class="decor">✲</p>
   <h1><span>Un</span>Name</h1>
   <h2>Un subtitulo para la página</h2>
@@ -20,6 +20,8 @@ const pageTitle: string = 'Home Page';
       blanditiis rem id quos eum ut quam omnis officiis nulla?
     </em>
   </p>
+
+  <HomeBtns />
 
   <!--
     <Greeting
@@ -54,9 +56,7 @@ const pageTitle: string = 'Home Page';
     margin: 0 0 1rem 0;
     font-size: 5rem;
   }
-  h2 {
-    color: #333;
-  }
+
   .decor {
     font-size: 3rem;
     margin: 0;

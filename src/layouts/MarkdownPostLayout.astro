@@ -27,11 +27,14 @@ const { frontmatter } = Astro.props;
 
   <slot />
 </BaseLayout>
-
 <BackBtn />
 
 <style>
+  p {
+    margin: 0;
+  }
   .tags {
+    margin: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     gap: 0.4em;
