@@ -1,2 +1,3 @@
-# kafz
-personal blog
+# memoranda
+
+## Astro blog template
