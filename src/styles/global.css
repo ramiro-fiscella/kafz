@@ -8,7 +8,7 @@
 html {
   background-color: #ebddde;
   color: #333;
-  /*background-color: #ebddde;*/
+
   font-family: 'Noto Serif', serif;
 }
 
@@ -241,10 +241,13 @@ html.dark,
   color: #333;
 }
 
-.dark .card p {
+.dark .card * {
   color: #888;
 }
 .dark .card h3,
 .dark .card:hover * {
   color: #ebddde;
+}
+.dark .card:hover {
+  background-color: #191919;
 }

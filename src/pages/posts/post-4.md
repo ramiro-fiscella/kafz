@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownPostLayout.astro'
 title: 'Masters of Their Craft'
 subtitle: 'Lessons from the Olympics'
-pubDate: 2024-07-26
+pubDate: '2024-07-26'
 description: 'Finding inspiration in the discipline and dedication of Olympic athletes.'
 author: 'Ka'
 tags: ['discipline', 'dedication', 'Olympics', 'self-mastery']

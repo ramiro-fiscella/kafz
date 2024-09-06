@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownPostLayout.astro'
 title: 'Soul Searching'
 subtitle: 'Discovering the Path Within Through Digital Creation'
-pubDate: 2024-07-24
+pubDate: '2024-07-24'
 description: 'Exploring how creating a digital image can be a tool for uncovering our true purpose and finding genuine satisfaction.'
 author: 'Ka'
 tags: ['soul searching', 'self-discovery', 'digital creation', 'art']

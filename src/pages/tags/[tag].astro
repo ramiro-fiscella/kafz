@@ -26,11 +26,27 @@ const { posts } = Astro.props;
 
 <BaseLayout pageTitle={tag}>
   <em>Posts tagged with {tag}</em>
-  <ul>
+  <ul class="blog-posts">
     {
       posts.map((post: any) => (
-        <BlogPost url={post.url} title={post.frontmatter.title} />
+        <BlogPost
+          url={post.url}
+          title={post.frontmatter.title}
+          date={post.frontmatter.pubDate}
+          author={post.frontmatter.author}
+          subtitle={post.frontmatter.subtitle}
+        />
       ))
     }
   </ul>
 </BaseLayout>
+
+<style>
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+</style>

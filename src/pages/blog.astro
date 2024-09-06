@@ -13,7 +13,7 @@ const allPosts = await Astro.glob('./posts/*.md');
           <BlogPost
             title={post.frontmatter.title}
             url={post.url}
-            date={post.frontmatter.date}
+            date={post.frontmatter.pubDate}
             author={post.frontmatter.author}
             description={post.frontmatter.description}
           />
@@ -24,9 +24,12 @@ const allPosts = await Astro.glob('./posts/*.md');
 </BaseLayout>
 
 <style>
+  section {
+    min-height: 100vh;
+  }
   .blog-posts {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     gap: 1rem;
   }
 </style>

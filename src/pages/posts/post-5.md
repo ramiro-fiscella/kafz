@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownPostLayout.astro'
 title: 'The Struggle and the Shine'
 subtitle: 'Perseverance in the Face of Failure'
-pubDate: 2024-07-28
+pubDate: '2024-07-28'
 description: 'The journey of becoming and the rewards that come after the storm.'
 author: 'Ka'
 tags: ['perseverance', 'failure', 'self-mastery', 'developer']

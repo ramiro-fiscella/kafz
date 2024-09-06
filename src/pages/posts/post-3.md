@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownPostLayout.astro'
 title: 'The Resonance of Indie Music'
 subtitle: 'Finding harmony and authenticity in the indie music scene'
-pubDate: 2024-07-25
+pubDate: '2024-07-25'
 description: ''
 author: 'Ka'
 tags: ['soul searching', 'self-discovery', 'music', 'authenticity']
