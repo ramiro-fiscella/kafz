@@ -6,10 +6,8 @@ import ThemeIcon from './ThemeIcon.astro';
 
 <header>
   <div class="header-container">
-    <a href="/" title="the blog">
-      <span class="logo"> N<span class="accent">N</span></span>
-      <span class="title"> UN<span class="accent">NAME</span></span>
-      <!-- <span> HATE<span class="accent">HATR</span></span>  -->
+    <a class="logo" href="/" title="the blog">
+      me<span class="accent">mo</span>
     </a>
     <nav>
       <Hamburger />
@@ -26,36 +24,18 @@ import ThemeIcon from './ThemeIcon.astro';
 <style>
   a {
     margin: 0;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     font-weight: 400;
   }
-  .title {
-    font-size: 1.2rem;
-    padding: 0.4rem;
-  }
   .accent {
-    font-weight: 900;
+    font-weight: 700;
   }
   .logo {
     font-size: 2rem;
-    display: none;
   }
+
   nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
-
-  @media screen and (max-width: 600px) {
-    .title {
-      opacity: 0;
-    }
-
-    .logo {
-      display: block;
-    }
   }
 </style>

@@ -3,19 +3,146 @@ import Social from './Social.astro';
 ---
 
 <footer>
-  <Social platform="x" username="ramiro_fzz" />
-  <Social platform="github" username="ramiro-fiscella" />
-  <Social platform="youtube" username="Kammaronn" />
+  <div class="footer-links">
+    <section>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Social</h4>
+      <ul>
+        <li><a href="/">GitHub</a></li>
+        <li><a href="/about">LinkedIn</a></li>
+        <li><a href="/blog">Behance</a></li>
+        <li><a href="/tags">X</a></li>
+      </ul>
+    </section>
+  </div>
+  <section>
+    <h4>Leave a message</h4>
+    <form action="https://formspree.io/f/xdoyvqoj" method="POST">
+      <p>
+        <label>
+          Name
+          <input type="text" name="name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Email
+          <input type="email" name="_replyto" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Message
+          <textarea name="message"></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </section>
 </footer>
 
 <style>
   footer {
-    bottom: 0;
-    width: 100%;
+    width: 94%;
+    max-width: 1024px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 4rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin: 0 auto 2rem;
+    background: #111;
+    background: linear-gradient(
+      0deg,
+      #222 0%,
+
+      #111 66%
+    );
+    color: #ebddde;
+    border-radius: 1rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  a {
+    font-size: 1.2rem;
+    color: #ebddde;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  form {
+    margin: 1rem 0;
+    width: 24rem;
+  }
+
+  form p {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  form p label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  form p input,
+  form p textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #666;
+    border-radius: 0.5rem;
+  }
+
+  form p button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #666;
+    border-radius: 0.5rem;
+  }
+
+  form p button:hover {
+    background-color: #333;
+    color: #ebddde;
   }
 </style>

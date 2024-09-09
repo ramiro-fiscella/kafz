@@ -37,7 +37,7 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
 
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0.8rem 0;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -52,7 +52,7 @@ h2 {
 p {
   text-wrap: pretty;
   font-size: 20px;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
 }
 
 a {
@@ -92,6 +92,16 @@ header {
   justify-content: space-between;
   max-width: 80ch;
   margin: auto;
+}
+
+.logo {
+  padding: 0.4rem 0.8rem;
+  color: #333;
+}
+.logo:hover {
+  color: #ebddde;
+  background-color: #333;
+  border-radius: 3px;
 }
 .hamburger {
   cursor: pointer;
@@ -174,6 +184,10 @@ html.dark,
 .dark .expanded {
   background-color: #222;
   color: #ebddde;
+}
+.dark .logo:hover,
+.dark .logo:hover .accent {
+  color: #222;
 }
 .dark .line {
   background-color: #ebddde;

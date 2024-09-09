@@ -1,15 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Footer from '../components/Footer.astro';
 
 const pageTitle: string = 'What?';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <section>
-    <h2>Bienvenido a UnName</h2>
+    <h2>Bienvenido a <strong>memo</strong></h2>
     <p>
-      <strong>Un Name</strong> es un fanzine digital donde las ideas fluyen libremente.
+      <strong>memo</strong> es un fanzine digital donde las ideas fluyen libremente.
       Aquí, cualquiera puede ser autor, sin importar su experiencia o historia.
     </p>
   </section>
@@ -36,9 +35,7 @@ const pageTitle: string = 'What?';
     <h3>Comunidad</h3>
     <p>
       Escribe, comparte y disfruta de las diversas perspectivas que hacen único
-      a <em>Un Name</em>. Este espacio es tanto tuyo como nuestro.
+      a <em>memo</em>. Este espacio es tanto tuyo como nuestro.
     </p>
   </section>
-
-  <Footer />
 </BaseLayout>
