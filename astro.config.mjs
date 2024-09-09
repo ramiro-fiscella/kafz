@@ -4,6 +4,6 @@ import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:4321/',
+  site: 'https://memoblog.vercel.app',
   integrations: [preact()],
 });
