@@ -18,9 +18,11 @@ const { frontmatter } = Astro.props;
   <div class="tags">
     {
       frontmatter.tags.map((tag: any) => (
+          <a href={`/tags/{tag}`}>
         <p class="tag">
-          <a href={`/tags/{tag}`}>{tag}</a>
+          {tag}
         </p>
+          </a>
       ))
     }
   </div>
@@ -40,19 +42,5 @@ const { frontmatter } = Astro.props;
     gap: 0.4em;
   }
 
-  .tag {
-    border: solid 1px #333;
-    border-radius: 3px;
-    padding: 4px 16px;
-    font-size: 16px;
-  }
-  .tag:hover {
-    background-color: #333;
-    color: #ebddde;
-    cursor: pointer;
-  }
-
-  .tag:hover a {
-    color: #ebddde;
-  }
+  
 </style>

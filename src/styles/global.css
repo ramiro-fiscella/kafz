@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: #ebddde;
+  background-color: #d9cece;
   color: #333;
 
   font-family: 'Noto Serif', serif;
@@ -84,7 +84,7 @@ header {
   width: 100vw;
   z-index: 10;
   padding: 1rem;
-  background-color: #ebddde;
+  background-color: #d9cece;
 }
 .header-container {
   display: flex;
@@ -158,6 +158,28 @@ a:focus {
   background-color: #ebddde;
 }
 
+.tag {
+  border: solid 1px #333;
+  border-radius: 3px;
+  padding: 4px 16px;
+  font-size: 16px;
+}
+.tag:hover {
+  background-color: #333;
+  color: #ebddde;
+  cursor: pointer;
+}
+
+.tag:hover a {
+  color: #ebddde;
+}
+.card:hover .post-tag {
+  color: #ebddde;
+  background-color: #222;
+
+}
+
+
 @media screen and (min-width: 636px) {
   .nav-links {
     display: flex;
@@ -197,27 +219,34 @@ html.dark,
 .dark a {
   color: #ebddde;
 }
-.dark a:hover {
-  background-color: #ebddde;
-  color: #222;
-}
+
 .dark .post {
   padding: 4px 8px;
   border-radius: 3px;
 }
 .dark h2,
-.dark em,
-.dark .tag a {
+.dark em{
   color: #888;
 }
 
-.dark nav-links a:hover {
+.dark .tag {
+  color: #888;
+  border: solid 1px #888;
+  background-color: none;
+}
+.dark .tag:hover {
+  background-color: #ebddde;
+  color: #222;
+  border-color: #ebddde;
+}
+
+
+
+.dark .nav-links a:hover {
   background-color: #ebddde;
   color: #222;
 }
-.dark p .tag {
-  border: solid 1px #888;
-}
+
 .home {
   position: absolute;
   top: 0;
@@ -264,4 +293,9 @@ html.dark,
 }
 .dark .card:hover {
   background-color: #191919;
+}
+.dark .card:hover .post-tag {
+  background-color: #ebddde;
+  color: #333;
+
 }

@@ -12,9 +12,11 @@ const pageTitle: string = 'Tag Index';
   <div class="tags">
     {
       tags.map((tag) => (
-        <p class="tag">
-          <a href={`/tags/${tag}`}>{tag}</a>
-        </p>
+          <a href={`/tags/${tag}`}>
+            <p class="tag">
+              {tag}
+            </p>
+          </a>
       ))
     }
   </div>
@@ -24,20 +26,10 @@ const pageTitle: string = 'Tag Index';
     display: flex;
     flex-wrap: wrap;
   }
-
   .tag {
-    margin: 0.25em;
-    border: solid 1px #333;
-    border-radius: 3px;
     padding: 0.5rem 1rem;
-    font-size: 1.15em;
+    border-radius: 3px;
+    margin: 0.4rem;
   }
 
-  .dark .tag a {
-    color: #aaa;
-  }
-  .dark .tag {
-    color: #aaa;
-    border: solid 1px #ebddde;
-  }
 </style>

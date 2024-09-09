@@ -10,7 +10,7 @@ const { title, url, date, author, description } = Astro.props;
         <p class="card-meta">{date} | {author}</p>
         <p class="card-description">{description}</p>
       </>
-      <p class="tag">Leer Post</p>
+      <p class="post-tag">Leer Post</p>
     </div>
   </a>
 </li>
@@ -44,12 +44,8 @@ const { title, url, date, author, description } = Astro.props;
     transform: scale(1.02);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   }
-  .card:hover .tag {
-    color: #ebddde;
-    background-color: #333;
-    padding:;
-  }
-  .tag {
+
+  .post-tag {
     border: solid 1px #333;
     border-radius: 3px;
     padding: 4px 16px;
@@ -68,7 +64,7 @@ const { title, url, date, author, description } = Astro.props;
   }
 
   .card-description {
-    margin: 8px 0 0;
+    margin: 8px 0;
     font-size: 1rem;
     text-wrap: pretty;
 
