@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "memo",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@astrojs/check": "^0.8.2",
     "@astrojs/preact": "^3.5.1",
     "@astrojs/rss": "^4.0.7",
@@ -19,10 +18,3 @@
     "typescript": "^5.5.4"
   }
 }
-=======
-    "astro": "^4.12.2",
-    "@astrojs/check": "^0.8.2",
-    "typescript": "^5.5.4"
-  }
-}
->>>>>>> 4a8bb4a (first commit)
