@@ -1,3 +1,3 @@
-# MEMO
+# memoranda
 
 ## Simple blog template

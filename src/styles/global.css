@@ -35,7 +35,7 @@ h5,
 h6 {
   text-wrap: balance;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 
   margin: 2rem 0 0.8rem 0;
   line-height: 1;
@@ -61,7 +61,11 @@ a {
   font-family: 'Montserrat', sans-serif;
 }
 em {
-  color: #777;
+  color: #222;
+  font-weight: 500;
+}
+strong {
+  font-weight: 800;
 }
 ul,
 li {
@@ -99,7 +103,7 @@ header {
   color: #333;
 }
 .logo:hover {
-  color: #ebddde;
+  color: #ccc;
   background-color: #333;
   border-radius: 3px;
 }
@@ -139,7 +143,7 @@ header {
 
 .nav-links a:hover,
 a:focus {
-  color: #ebddde;
+  color: #ccc;
   background-color: #333;
   border-radius: 3px;
 }
@@ -155,7 +159,7 @@ a:focus {
   text-align: right;
 
   margin: 0;
-  background-color: #ebddde;
+  background-color: #ccc;
 }
 
 .tag {
@@ -166,19 +170,19 @@ a:focus {
 }
 .tag:hover {
   background-color: #333;
-  color: #ebddde;
+  color: #ccc;
   cursor: pointer;
 }
 
 .tag:hover a {
-  color: #ebddde;
+  color: #ccc;
 }
 .card:hover .post-tag {
-  color: #ebddde;
+  color: #ccc;
   background-color: #222;
-
 }
 
+/* responsive styles */
 
 @media screen and (min-width: 636px) {
   .nav-links {
@@ -205,19 +209,19 @@ html.dark,
 .dark header,
 .dark .expanded {
   background-color: #222;
-  color: #ebddde;
+  color: #ccc;
 }
 .dark .logo:hover,
 .dark .logo:hover .accent {
   color: #222;
 }
 .dark .line {
-  background-color: #ebddde;
+  background-color: #ccc;
 }
 .dark .nav-links a,
 .dark span,
 .dark a {
-  color: #ebddde;
+  color: #ccc;
 }
 
 .dark .post {
@@ -225,8 +229,8 @@ html.dark,
   border-radius: 3px;
 }
 .dark h2,
-.dark em{
-  color: #888;
+.dark em {
+  color: #fff;
 }
 
 .dark .tag {
@@ -235,15 +239,13 @@ html.dark,
   background-color: none;
 }
 .dark .tag:hover {
-  background-color: #ebddde;
+  background-color: #ccc;
   color: #222;
-  border-color: #ebddde;
+  border-color: #ccc;
 }
 
-
-
 .dark .nav-links a:hover {
-  background-color: #ebddde;
+  background-color: #ccc;
   color: #222;
 }
 
@@ -257,15 +259,15 @@ html.dark,
   z-index: -1;
 
   background: none;
-  background-image: linear-gradient(#d7cfcf 0.1em, transparent 0.1em),
-    linear-gradient(90deg, #d7cfcf 0.1em, transparent 0.1em);
+  background-image: linear-gradient(#bdbdbd 0.1em, transparent 0.1em),
+    linear-gradient(90deg, #bdbdbd 0.1em, transparent 0.1em);
   background-size: 2.64em 2.64em;
 }
 .difuminado {
   width: 100%;
   height: 100%;
   background: none;
-  background-image: linear-gradient(#ebddde00, #ebddde00, #ebddde);
+  background-image: linear-gradient(#cccccc00, #cccccc00, #ccc);
 }
 .dark .home {
   background-image: linear-gradient(#191919 0.1em, transparent 0.1em),
@@ -289,13 +291,12 @@ html.dark,
 }
 .dark .card h3,
 .dark .card:hover * {
-  color: #ebddde;
+  color: #ccc;
 }
 .dark .card:hover {
   background-color: #191919;
 }
 .dark .card:hover .post-tag {
-  background-color: #ebddde;
+  background-color: #ccc;
   color: #333;
-
 }

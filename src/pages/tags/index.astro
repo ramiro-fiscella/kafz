@@ -5,18 +5,16 @@ const allPosts: any = await Astro.glob('../posts/*.md');
 const tags = [
   ...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat()),
 ];
-const pageTitle: string = 'Tag Index';
+const pageTitle: string = 'Índice de categorías';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <div class="tags">
     {
       tags.map((tag) => (
-          <a href={`/tags/${tag}`}>
-            <p class="tag">
-              {tag}
-            </p>
-          </a>
+        <a href={`/tags/${tag}`}>
+          <p class="tag">{tag}</p>
+        </a>
       ))
     }
   </div>
@@ -31,5 +29,4 @@ const pageTitle: string = 'Tag Index';
     border-radius: 3px;
     margin: 0.4rem;
   }
-
 </style>
